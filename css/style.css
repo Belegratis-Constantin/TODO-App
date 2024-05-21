@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+html {
+    font-family: Poetsen One, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("../img/background.png") no-repeat center / cover;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(rgb(17, 25, 37), rgb(125, 151, 124));
+    height: 35rem;
+    border-radius: 10px;
+    box-shadow: 0.3rem 1.25rem 3.125rem #000;
+}
+
+.content {;
+    width: 90%;
+    height: 90%;
+
+    & .content__header {
+        color: #fff;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.sticky {
+    position: sticky;
+    top: 2rem;
+}
+
+.input {
+    width: 60%;
+    height: 1.4rem;
+    background: #e0dede;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    padding: 0.625rem;
+    border: none;
+    outline: none;
+    border-radius: 0.3rem;
+
+    &::placeholder {
+        font-weight: bold;
+    }
+
+    &.filter {
+        margin-bottom: 1rem;
+    }
+}
+
+.button {
+    border-style: none;
+    width: 32%;
+    height: 2.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+
+    &.add-btn {
+        color: #fff;
+        background: darkgreen;
+    }
+
+    &.delete-btn {
+        color: #fff;
+        background: darkred;
+    }
+}
+
+.delete-Button, .edit-Button {
+    color: #fff;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    width: 1.75rem;
+    height: 2rem;
+    border-style: none;
+    background: darkred;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-right: 0.2rem;
+}
+
+.edit-Button {
+    background: #e0dede;
+}
+
+.delete-Button:hover {
+    background: #570000;
+    transition: 0.2s ease-in-out;
+}
+
+.edit-Button:hover {
+    background: #bab6b6;
+}
+
+.delete-Icon, .edit-Icon {
+    height: 1rem;
+}
+
+.checkbox {
+    border: none;
+}
+
+.list {
+    height: 20rem;
+    overflow: scroll;
+    scrollbar-width: none;
+
+    & .list__ul {
+        margin: 0;
+        padding: 1rem 0 0;
+        list-style-type: none;
+    }
+
+    & .list__li {
+        display: flex;
+        align-items: center;
+        width: 97.5%;
+        max-width: 29rem;
+        margin: 0.3rem;
+    }
+}
+
+.span {
+    display: inline-block;
+    margin-left: 0.75rem;
+    width: 85%;
+    color: white;
+
+    &.input {
+        color: black;
+    }
+}
+
+.line-through {
+    text-decoration: line-through;
+    margin: 2rem;
+}
+
+.completed {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.progress-bar-container {
+    width: 97.5%;
+    max-width: 28.4rem;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+    & .progress-bar-container__progress-bar {
+        height: 20px;
+        background-color: rgb(146, 170, 139);
+        text-align: center;
+        line-height: 20px;
+        color: white;
+        width: 0;
+        border-radius: 5px;
+    }
+}
